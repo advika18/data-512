@@ -16,24 +16,17 @@ The jupyter notebook is available under the [MIT License](LICENSE)
 ## Final CSV Fields
 
 The final csv file contains the following columns:
+
 | Columns                     |
-|                             |
+|-----------------------------|
 | year                        | 
-|                             |
 | month                       | 
-|                             |
 | pagecount_all_views         | 
-|                             |
 | pagecount_desktop_views     | 
-|                             |
 | pagecount_mobile_views      | 
-|                             |
 | pageview_all_views          | 
-|                             |
 | pageview_desktop_views      | 
-|                             |
 | pageview_mobile_views       | 
-|                             |
 
 
 ## Notes
