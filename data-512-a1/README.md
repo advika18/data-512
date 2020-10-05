@@ -10,7 +10,9 @@ The jupyter notebook is available under the [MIT License](LICENSE)
 
 ### API Documentation Reference
 [REST API](https://wikimedia.org/api/rest_v1/#/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end)
+
 [Pagecount endpoint](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts)
+
 [Pageviews endpoint](https://wikimedia.org/api/rest_v1/#/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end)
 
 ## Final CSV Fields
