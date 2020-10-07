@@ -4,9 +4,13 @@
 Construct, analyze, and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through August 30 2020. 
 Data is obtained from two different Wikimedia [REST API](https://www.mediawiki.org/wiki/Wikimedia_REST_API) endpoints which are combined into a single dataset.
 
-### API Documentation Reference
+## API Documentation Reference
+
 The Legacy Pagecounts API ([documentation](https://wikimedia.org/api/rest_v1/#/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end), [endpoint](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts)) provides access to desktop and mobile traffic data from January 2008 through July 2016.
+
 The Pageviews API ([documentation](https://wikimedia.org/api/rest_v1/#/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end), [endpoint](https://wikimedia.org/api/rest_v1/#/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end)) provides access to desktop, mobile web, and mobile app traffic data from July 2015 through August 2020.
+
+** Usage of the data must honor the [Terms of Use](https://foundation.wikimedia.org/wiki/Terms_of_Use/en) and Wikimedia's [Privacy Policy](https://foundation.wikimedia.org/wiki/Privacy_policy)
 
 ## Final CSV Fields
 
