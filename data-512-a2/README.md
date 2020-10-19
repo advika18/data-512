@@ -5,8 +5,7 @@ Identify potential sources of bias in a corpus of human-annotated data, and desc
 
 Analyses are performed to identify if there is a suitable representations of population groups in the labellers sample, if certain demographics are unfairly marginalized due to the labelling, and exploration of time trends of word usage. Initial investigation reveals some of the most common 'toxic' labels as follows: 
 
-![Alt text](images/toxic_wc.png "Top words flagged as toxic")
-
+![toxic image](images/toxic_wc.png "Top words flagged as toxic")
 
 ## API Documentation Reference
 
