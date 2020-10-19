@@ -15,6 +15,16 @@ The data is downloaded from [Figshare](https://figshare.com/projects/Wikipedia_T
 
 For further information of the data collection processing and labelling protocol, read this [reference paper](https://arxiv.org/abs/1610.08914)
 
+## Required Libraries
+
+- numpy
+- urllib
+- pandas
+- scipy
+- sklearn
+- matplotlib
+- wordcloud (optional)
+
 ## License
 
 The data sources are available for use under the [CC0 public domain license](https://wiki.creativecommons.org/wiki/CC0) and the project repository is available under the [MIT License](LICENSE)
