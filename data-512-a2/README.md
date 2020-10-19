@@ -5,36 +5,17 @@ Identify potential sources of bias in a corpus of human-annotated data, and desc
 
 Analyses are performed to identify if there is a suitable representations of population groups in the labellers sample, if certain demographics are unfairly marginalized due to the labelling, and exploration of time trends of word usage. Initial investigation reveals some of the most common 'toxic' labels as follows: 
 
-![toxic image](images/toxic_wc.png "Top words flagged as toxic")
+![Alt text](images/toxic_wc.png "Top words flagged as toxic")
 
-## API Documentation Reference
+Exploration of how the bias might impact the behavior of machine learning models trained on the data, when those models are used for research purposes or to power data-driven applications is also performed. For example, Google used these datasets to train a project called [Conversation AI](https://github.com/conversationai/perspectiveapi)
 
-The Legacy Pagecounts API ([documentation](https://wikimedia.org/api/rest_v1/#/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end), [endpoint](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts)) provides access to desktop and mobile traffic data from January 2008 through July 2016.
+## Data Sources
 
-The Pageviews API ([documentation](https://wikimedia.org/api/rest_v1/#/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end), [endpoint](https://wikimedia.org/api/rest_v1/#/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end)) provides access to desktop, mobile web, and mobile app traffic data from July 2015 through August 2020.
+The data is downloaded from [Figshare](https://figshare.com/projects/Wikipedia_Talk/16731). View schema and further dataset informatin [here](https://meta.wikimedia.org/wiki/Research:Detox/Data_Release).
 
-** Usage of the data must honor the [Terms of Use](https://foundation.wikimedia.org/wiki/Terms_of_Use/en) and Wikimedia's [Privacy Policy](https://foundation.wikimedia.org/wiki/Privacy_policy)
+For further information of the data collection processing and labelling protocol, read this [reference paper](https://arxiv.org/abs/1610.08914)
 
-## Final CSV Fields
+## License
 
-The final csv file contains the following columns:
+The data sources are available for use under the [CC0 public domain license](https://wiki.creativecommons.org/wiki/CC0) and the project repository is available under the [MIT License](LICENSE)
 
-| Column                      | Value             |
-|-----------------------------|-------------------|
-| year                        | YYYY              |
-| month                       | MM                |
-| pagecount_all_views         | num_views         | 
-| pagecount_desktop_views     | num_views         |
-| pagecount_mobile_views      | num_views         |
-| pageview_all_views          | num_views         |
-| pageview_desktop_views      | num_views         |
-| pageview_mobile_views       | num_views         |
-
-## Terms of Use
-The source data and wikimedia terms of use are available through the [Wikimedia Foundation](https://www.mediawiki.org/wiki/Wikimedia_REST_API#Terms_and_conditions).
-The project is available under the [MIT License](LICENSE)
-
-## Notes
-As much as possible, we're interested in organic (user) traffic, as opposed to traffic by web crawlers or spiders. The Pageview API (but not the Pagecount API) allows you to filter by agent=user and is done in the notebook.
-
-There was about 1 year of overlapping traffic data between the two APIs. Overlap can be observed in the final plot.
