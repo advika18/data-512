@@ -20,7 +20,7 @@ For further information of the data collection processing and labelling protocol
 - numpy
 - urllib
 - pandas
-- scipy
+- seaborn
 - sklearn
 - matplotlib
 - wordcloud (optional)
